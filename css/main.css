@@ -1,0 +1,55 @@
+
+.header {
+    grid-area: header;
+    background: #FFD7ED;
+    font-family: 'Fugaz One', cursive;
+    text-align: center;
+    border:10px double white;
+
+  }
+  .main {
+    grid-area: main;
+    Background: #D2DAFA;
+    font-family: 'Fugaz One', cursive;
+    padding:5px;
+    border:10px dotted   #FFD7ED;
+  }
+  .sidebar {
+    grid-area: sidebar;
+    background: #FFD7ED;
+    font-family: 'Fugaz One', cursive;
+      padding:20px;
+      border:5px dashed #D2DAFA;
+      float:right;
+  }
+
+  .work {
+    grid-area: work;
+    background: #EDF0F2;
+    font-family: 'Fugaz One', cursive;
+  }
+
+
+  a {
+    color:white
+  }
+  a:hover {
+    text-decoration: underline;
+    color:pink
+  }
+
+.container {
+    display: grid;
+    grid-template-columns: 20px auto 500px;
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    grid-template-rows: 100px 300px 400px 200px;
+    /* grid-template-rows: repeat(3, 200px); */
+    grid-column-gap: 10px;
+    grid-row-gap: 15px;
+
+    grid-template-areas:
+    "header header header"
+    "main main sidebar"
+    "work work sidebar"
+
+}
